@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    margin: 0;
+}
+
+.item {
+    height: 4rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: .05vw white;
+
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: left right;
+}
+
+.item-name,
+.item-score {
+    padding: .5rem;
+    vertical-align: middle;
+}
+
+.item-name {
+    display: inline-block;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-score {
+    display: inline-block;
+    text-align: right;
+
+    justify-content: flex-end;
+    padding: 1vw;
+}
